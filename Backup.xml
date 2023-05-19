@@ -1,0 +1,2545 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>33aa7481-0188-1000-dba3-5466b46e4bee</groupId>
+    <name>Backup</name>
+    <snippet>
+        <controllerServices>
+            <id>0406fc54-be4f-3391-0000-000000000000</id>
+            <parentGroupId>f046bc9b-df6f-3111-0000-000000000000</parentGroupId>
+            <versionedComponentId>0406fc54-be4f-3391-b789-30773e2185f1</versionedComponentId>
+            <bulletinLevel>WARN</bulletinLevel>
+            <bundle>
+                <artifact>nifi-dbcp-service-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.21.0</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>kerberos-password</key>
+                    <value>
+                        <name>kerberos-password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>
+                        <name>dbcp-min-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>
+                        <name>Max Wait Time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>
+                        <name>Database Driver Class Name</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                    <value>
+                        <name>kerberos-principal</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>
+                        <name>Max Total Connections</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
+                        <name>kerberos-credentials-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>
+                        <name>dbcp-max-conn-lifetime</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
+                    <value>
+                        <name>Validation-query</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>
+                        <name>Database Connection URL</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>
+                        <name>dbcp-time-between-eviction-runs</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>
+                        <name>Database User</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-user-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosUserService</identifiesControllerService>
+                        <name>kerberos-user-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-soft-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>
+                        <name>database-driver-locations</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>
+                        <name>dbcp-max-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Password</key>
+                    <value>
+                        <name>Password</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>dwh_mc - DBCPConnectionPool</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>0</value>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>500 millis</value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>com.mysql.cj.jdbc.Driver</value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>30 mins</value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>8</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>jdbc:mysql://192.168.21.175:3306/dwh_mc?useSSL=true&amp;requireSSL=true&amp;verifyServerCertificate=false&amp;allowPublicKeyRetrieval=true&amp;user=srv_arq&amp;password=hellodwh@solidy</value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>srv_arq</value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>C:\NiFi\lib\mysql-connector-j-8.0.32.jar</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>8</value>
+                </entry>
+            </properties>
+            <state>DISABLED</state>
+            <type>org.apache.nifi.dbcp.DBCPConnectionPool</type>
+        </controllerServices>
+        <controllerServices>
+            <id>26c6f305-dbc8-3873-0000-000000000000</id>
+            <parentGroupId>f046bc9b-df6f-3111-0000-000000000000</parentGroupId>
+            <versionedComponentId>26c6f305-dbc8-3873-90a0-888b3dd75c33</versionedComponentId>
+            <bulletinLevel>WARN</bulletinLevel>
+            <bundle>
+                <artifact>nifi-record-serialization-services-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.21.0</version>
+            </bundle>
+            <descriptors>
+                <entry>
+                    <key>max-cache-size</key>
+                    <value>
+                        <name>max-cache-size</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>VolatileSchemaCache</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>max-cache-size</key>
+                    <value>100</value>
+                </entry>
+            </properties>
+            <state>DISABLED</state>
+            <type>org.apache.nifi.schema.inference.VolatileSchemaCache</type>
+        </controllerServices>
+        <controllerServices>
+            <id>2f96c95a-262c-3d1e-0000-000000000000</id>
+            <parentGroupId>f046bc9b-df6f-3111-0000-000000000000</parentGroupId>
+            <versionedComponentId>2f96c95a-262c-3d1e-b07d-df91745c8da8</versionedComponentId>
+            <bulletinLevel>WARN</bulletinLevel>
+            <bundle>
+                <artifact>nifi-dbcp-service-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.21.0</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>kerberos-password</key>
+                    <value>
+                        <name>kerberos-password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>
+                        <name>dbcp-min-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>
+                        <name>Max Wait Time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>
+                        <name>Database Driver Class Name</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                    <value>
+                        <name>kerberos-principal</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>
+                        <name>Max Total Connections</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
+                        <name>kerberos-credentials-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>
+                        <name>dbcp-max-conn-lifetime</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
+                    <value>
+                        <name>Validation-query</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>
+                        <name>Database Connection URL</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>
+                        <name>dbcp-time-between-eviction-runs</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>
+                        <name>Database User</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-user-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosUserService</identifiesControllerService>
+                        <name>kerberos-user-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-soft-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>
+                        <name>database-driver-locations</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>
+                        <name>dbcp-max-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Password</key>
+                    <value>
+                        <name>Password</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>dwh_so - DBCPConnectionPool</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>0</value>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>500 millis</value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>com.mysql.cj.jdbc.Driver</value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>30 mins</value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>8</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>jdbc:mysql://192.168.21.175:3306/dwh_so?useSSL=true&amp;requireSSL=true&amp;verifyServerCertificate=false&amp;allowPublicKeyRetrieval=true&amp;user=srv_arq&amp;password=hellodwh@solidy</value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>srv_arq</value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>8</value>
+                </entry>
+            </properties>
+            <state>DISABLED</state>
+            <type>org.apache.nifi.dbcp.DBCPConnectionPool</type>
+        </controllerServices>
+        <controllerServices>
+            <id>af8ff115-6166-3d96-0000-000000000000</id>
+            <parentGroupId>f046bc9b-df6f-3111-0000-000000000000</parentGroupId>
+            <versionedComponentId>af8ff115-6166-3d96-b84b-4659a8515088</versionedComponentId>
+            <bulletinLevel>WARN</bulletinLevel>
+            <bundle>
+                <artifact>nifi-record-serialization-services-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.21.0</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>schema-branch</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>schema-name</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <name>schema-branch</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-application-strategy</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>confluent-encoded</dependentValues>
+                            <dependentValues>schema-name</dependentValues>
+                            <dependentValues>schema-text-property</dependentValues>
+                            <dependentValues>hwx-schema-ref-attributes</dependentValues>
+                            <dependentValues>hwx-content-encoded-schema</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <dependencies>
+                            <dependentValues>NESTED_FIELD</dependentValues>
+                            <propertyName>starting-field-strategy</propertyName>
+                        </dependencies>
+                        <name>schema-application-strategy</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Timestamp Format</key>
+                    <value>
+                        <name>Timestamp Format</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-inference-cache</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>infer-schema</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <identifiesControllerService>org.apache.nifi.serialization.RecordSchemaCacheService</identifiesControllerService>
+                        <name>schema-inference-cache</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Date Format</key>
+                    <value>
+                        <name>Date Format</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-name</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>schema-name</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <name>schema-name</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>starting-field-strategy</key>
+                    <value>
+                        <name>starting-field-strategy</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-registry</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>confluent-encoded</dependentValues>
+                            <dependentValues>schema-name</dependentValues>
+                            <dependentValues>hwx-schema-ref-attributes</dependentValues>
+                            <dependentValues>hwx-content-encoded-schema</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <identifiesControllerService>org.apache.nifi.schemaregistry.services.SchemaRegistry</identifiesControllerService>
+                        <name>schema-registry</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>starting-field-name</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>NESTED_FIELD</dependentValues>
+                            <propertyName>starting-field-strategy</propertyName>
+                        </dependencies>
+                        <name>starting-field-name</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Time Format</key>
+                    <value>
+                        <name>Time Format</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-access-strategy</key>
+                    <value>
+                        <name>schema-access-strategy</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-version</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>schema-name</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <name>schema-version</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-text</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>schema-text-property</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <name>schema-text</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>JsonTreeReader</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>schema-application-strategy</key>
+                    <value>SELECTED_PART</value>
+                </entry>
+                <entry>
+                    <key>schema-inference-cache</key>
+                    <value>26c6f305-dbc8-3873-0000-000000000000</value>
+                </entry>
+                <entry>
+                    <key>schema-name</key>
+                    <value>${schema.name}</value>
+                </entry>
+                <entry>
+                    <key>starting-field-strategy</key>
+                    <value>ROOT_NODE</value>
+                </entry>
+                <entry>
+                    <key>schema-access-strategy</key>
+                    <value>infer-schema</value>
+                </entry>
+                <entry>
+                    <key>schema-text</key>
+                    <value>${avro.schema}</value>
+                </entry>
+            </properties>
+            <state>DISABLED</state>
+            <type>org.apache.nifi.json.JsonTreeReader</type>
+        </controllerServices>
+        <controllerServices>
+            <id>ccd80b51-d627-38ea-0000-000000000000</id>
+            <parentGroupId>f046bc9b-df6f-3111-0000-000000000000</parentGroupId>
+            <versionedComponentId>ccd80b51-d627-38ea-b651-4c0f25081879</versionedComponentId>
+            <bulletinLevel>WARN</bulletinLevel>
+            <bundle>
+                <artifact>nifi-dbcp-service-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.21.0</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>kerberos-password</key>
+                    <value>
+                        <name>kerberos-password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>
+                        <name>dbcp-min-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>
+                        <name>Max Wait Time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>
+                        <name>Database Driver Class Name</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                    <value>
+                        <name>kerberos-principal</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>
+                        <name>Max Total Connections</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
+                        <name>kerberos-credentials-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>
+                        <name>dbcp-max-conn-lifetime</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
+                    <value>
+                        <name>Validation-query</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>
+                        <name>Database Connection URL</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>
+                        <name>dbcp-time-between-eviction-runs</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>
+                        <name>Database User</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-user-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosUserService</identifiesControllerService>
+                        <name>kerberos-user-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-soft-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>
+                        <name>database-driver-locations</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>
+                        <name>dbcp-max-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Password</key>
+                    <value>
+                        <name>Password</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>dwh_np - DBCPConnectionPool</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>0</value>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>500 millis</value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>com.mysql.cj.jdbc.Driver</value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>30 mins</value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>8</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>jdbc:mysql://192.168.21.175:3306/dwh_np?useSSL=true&amp;requireSSL=true&amp;verifyServerCertificate=false&amp;allowPublicKeyRetrieval=true&amp;user=srv_arq&amp;password=hellodwh@solidy</value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>srv_arq</value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>C:\NiFi\lib\mysql-connector-j-8.0.32.jar</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>8</value>
+                </entry>
+            </properties>
+            <state>DISABLED</state>
+            <type>org.apache.nifi.dbcp.DBCPConnectionPool</type>
+        </controllerServices>
+        <processGroups>
+            <id>029865d8-6506-34d0-0000-000000000000</id>
+            <parentGroupId>f046bc9b-df6f-3111-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <versionedComponentId>029865d8-6506-34d0-9747-ed530fa9f6dd</versionedComponentId>
+            <comments></comments>
+            <contents>
+                <processGroups>
+                    <id>5ab9bcfd-ff9c-3287-0000-000000000000</id>
+                    <parentGroupId>029865d8-6506-34d0-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>24.0</x>
+                        <y>-72.0</y>
+                    </position>
+                    <versionedComponentId>9fc8e64b-86b4-3512-b10a-ddfb097b9424</versionedComponentId>
+                    <comments></comments>
+                    <contents>
+                        <connections>
+                            <id>74050df8-2b6f-3a52-0000-000000000000</id>
+                            <parentGroupId>5ab9bcfd-ff9c-3287-0000-000000000000</parentGroupId>
+                            <versionedComponentId>79d964f8-e259-3c8d-81f3-3334dbd8051e</versionedComponentId>
+                            <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>5ab9bcfd-ff9c-3287-0000-000000000000</groupId>
+<id>e3e0e2b1-a68a-3373-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>e13c0809-2ffa-3037-abba-5b313d3fb4be</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>5ab9bcfd-ff9c-3287-0000-000000000000</groupId>
+<id>609b7226-7b12-3cff-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>2666129c-976e-39b4-8676-409695ab3bba</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>9a81ccae-8f1d-36a8-0000-000000000000</id>
+                            <parentGroupId>5ab9bcfd-ff9c-3287-0000-000000000000</parentGroupId>
+                            <versionedComponentId>a3609930-0d59-325a-a645-fe1675d6cd4c</versionedComponentId>
+                            <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>5ab9bcfd-ff9c-3287-0000-000000000000</groupId>
+<id>609b7226-7b12-3cff-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>2666129c-976e-39b4-8676-409695ab3bba</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>5ab9bcfd-ff9c-3287-0000-000000000000</groupId>
+<id>7675cb6d-835d-38f1-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>2a7e6dad-b01d-3e9c-a0de-a406b6610523</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <processors>
+                            <id>609b7226-7b12-3cff-0000-000000000000</id>
+                            <parentGroupId>5ab9bcfd-ff9c-3287-0000-000000000000</parentGroupId>
+                            <position>
+<x>80.0</x>
+<y>240.0</y>
+                            </position>
+                            <versionedComponentId>2666129c-976e-39b4-8676-409695ab3bba</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.21.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>put-db-record-allow-multiple-statements</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use statement.type Attribute</dependentValues>
+                <dependentValues>Use Record Path</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>put-db-record-allow-multiple-statements</name>
+        </value>
+    </entry>
+    <entry>
+        <key>table-schema-cache-size</key>
+        <value>
+            <name>table-schema-cache-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-schema-name</key>
+        <value>
+            <name>put-db-record-schema-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-field-containing-sql</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use statement.type Attribute</dependentValues>
+                <dependentValues>Use Record Path</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>put-db-record-field-containing-sql</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-table-identifiers</key>
+        <value>
+            <name>put-db-record-quoted-table-identifiers</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Statement Type Record Path</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use Record Path</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>Statement Type Record Path</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-column-behavior</key>
+        <value>
+            <name>put-db-record-unmatched-column-behavior</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-catalog-name</key>
+        <value>
+            <name>put-db-record-catalog-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-translate-field-names</key>
+        <value>
+            <name>put-db-record-translate-field-names</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-dcbp-service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+            <name>put-db-record-dcbp-service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-query-timeout</key>
+        <value>
+            <name>put-db-record-query-timeout</name>
+        </value>
+    </entry>
+    <entry>
+        <key>rollback-on-failure</key>
+        <value>
+            <name>rollback-on-failure</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-statement-type</key>
+        <value>
+            <name>put-db-record-statement-type</name>
+        </value>
+    </entry>
+    <entry>
+        <key>db-type</key>
+        <value>
+            <name>db-type</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-update-keys</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use statement.type Attribute</dependentValues>
+                <dependentValues>Use Record Path</dependentValues>
+                <dependentValues>UPSERT</dependentValues>
+                <dependentValues>UPDATE</dependentValues>
+                <dependentValues>SQL</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>put-db-record-update-keys</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-identifiers</key>
+        <value>
+            <name>put-db-record-quoted-identifiers</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-table-name</key>
+        <value>
+            <name>put-db-record-table-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-field-behavior</key>
+        <value>
+            <name>put-db-record-unmatched-field-behavior</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-max-batch-size</key>
+        <value>
+            <name>put-db-record-max-batch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-record-reader</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+            <name>put-db-record-record-reader</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Data Record Path</key>
+        <value>
+            <name>Data Record Path</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>put-db-record-allow-multiple-statements</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>table-schema-cache-size</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-table-identifiers</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-column-behavior</key>
+        <value>Fail on Unmatched Columns</value>
+    </entry>
+    <entry>
+        <key>put-db-record-translate-field-names</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>put-db-record-dcbp-service</key>
+        <value>0406fc54-be4f-3391-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>put-db-record-query-timeout</key>
+        <value>0 seconds</value>
+    </entry>
+    <entry>
+        <key>rollback-on-failure</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>put-db-record-statement-type</key>
+        <value>UPSERT</value>
+    </entry>
+    <entry>
+        <key>db-type</key>
+        <value>MySQL</value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-identifiers</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>put-db-record-table-name</key>
+        <value>sga_associados_mc</value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-field-behavior</key>
+        <value>Ignore Unmatched Fields</value>
+    </entry>
+    <entry>
+        <key>put-db-record-max-batch-size</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>put-db-record-record-reader</key>
+        <value>af8ff115-6166-3d96-0000-000000000000</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutDatabaseRecord</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>retry</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.PutDatabaseRecord</type>
+                        </processors>
+                        <processors>
+                            <id>7675cb6d-835d-38f1-0000-000000000000</id>
+                            <parentGroupId>5ab9bcfd-ff9c-3287-0000-000000000000</parentGroupId>
+                            <position>
+<x>80.0</x>
+<y>-8.0</y>
+                            </position>
+                            <versionedComponentId>2a7e6dad-b01d-3e9c-a0de-a406b6610523</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.21.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Keep Source File</key>
+        <value>
+            <name>Keep Source File</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Minimum File Age</key>
+        <value>
+            <name>Minimum File Age</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Polling Interval</key>
+        <value>
+            <name>Polling Interval</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Input Directory</key>
+        <value>
+            <name>Input Directory</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Age</key>
+        <value>
+            <name>Maximum File Age</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Batch Size</key>
+        <value>
+            <name>Batch Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Size</key>
+        <value>
+            <name>Maximum File Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Minimum File Size</key>
+        <value>
+            <name>Minimum File Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore Hidden Files</key>
+        <value>
+            <name>Ignore Hidden Files</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Recurse Subdirectories</key>
+        <value>
+            <name>Recurse Subdirectories</name>
+        </value>
+    </entry>
+    <entry>
+        <key>File Filter</key>
+        <value>
+            <name>File Filter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Path Filter</key>
+        <value>
+            <name>Path Filter</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Keep Source File</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>Minimum File Age</key>
+        <value>0 sec</value>
+    </entry>
+    <entry>
+        <key>Polling Interval</key>
+        <value>0 sec</value>
+    </entry>
+    <entry>
+        <key>Input Directory</key>
+        <value>C:\Users\Administrador\ARQUIVOS\SGA</value>
+    </entry>
+    <entry>
+        <key>Batch Size</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>Minimum File Size</key>
+        <value>0 B</value>
+    </entry>
+    <entry>
+        <key>Ignore Hidden Files</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Recurse Subdirectories</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>File Filter</key>
+        <value>associados mc.json</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>60 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>GetFile</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.GetFile</type>
+                        </processors>
+                        <processors>
+                            <id>e3e0e2b1-a68a-3373-0000-000000000000</id>
+                            <parentGroupId>5ab9bcfd-ff9c-3287-0000-000000000000</parentGroupId>
+                            <position>
+<x>72.0</x>
+<y>472.0</y>
+                            </position>
+                            <versionedComponentId>e13c0809-2ffa-3037-abba-5b313d3fb4be</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.21.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Group</key>
+        <value>
+            <name>Group</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Owner</key>
+        <value>
+            <name>Owner</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Create Missing Directories</key>
+        <value>
+            <name>Create Missing Directories</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Permissions</key>
+        <value>
+            <name>Permissions</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Count</key>
+        <value>
+            <name>Maximum File Count</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Last Modified Time</key>
+        <value>
+            <name>Last Modified Time</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Directory</key>
+        <value>
+            <name>Directory</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Conflict Resolution Strategy</key>
+        <value>
+            <name>Conflict Resolution Strategy</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Create Missing Directories</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Directory</key>
+        <value>C:\Users\Administrador\ARQUIVOS\SGA\NiFi</value>
+    </entry>
+    <entry>
+        <key>Conflict Resolution Strategy</key>
+        <value>replace</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutFile</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.PutFile</type>
+                        </processors>
+                    </contents>
+                    <defaultBackPressureDataSizeThreshold>5 GB</defaultBackPressureDataSizeThreshold>
+                    <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                    <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                    <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                    <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                    <name>(SGA) Upsert - Associados - Motoclub</name>
+                    <variables/>
+                </processGroups>
+                <processGroups>
+                    <id>967765dc-f969-35a5-0000-000000000000</id>
+                    <parentGroupId>029865d8-6506-34d0-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>448.0</x>
+                        <y>-280.0</y>
+                    </position>
+                    <versionedComponentId>f7a42a83-fa98-3f6f-9c03-e0f9b4c83562</versionedComponentId>
+                    <comments></comments>
+                    <contents>
+                        <connections>
+                            <id>10bb434e-1815-3875-0000-000000000000</id>
+                            <parentGroupId>967765dc-f969-35a5-0000-000000000000</parentGroupId>
+                            <versionedComponentId>a5a9a4b1-a244-337b-add0-0e2c2bb1443e</versionedComponentId>
+                            <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>967765dc-f969-35a5-0000-000000000000</groupId>
+<id>1c770b94-e4d2-399b-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>7ea8274a-19c4-38fa-aa77-1e656cdfd4ce</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>967765dc-f969-35a5-0000-000000000000</groupId>
+<id>88461a87-1da1-3200-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>2666129c-976e-39b4-8676-409695ab3bba</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>6453012c-1c14-344d-0000-000000000000</id>
+                            <parentGroupId>967765dc-f969-35a5-0000-000000000000</parentGroupId>
+                            <versionedComponentId>ea0cb4f0-af8b-3c59-87d6-7e225cb3decf</versionedComponentId>
+                            <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>967765dc-f969-35a5-0000-000000000000</groupId>
+<id>88461a87-1da1-3200-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>2666129c-976e-39b4-8676-409695ab3bba</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>967765dc-f969-35a5-0000-000000000000</groupId>
+<id>64ff2e2b-457f-3846-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>c481f2ae-7701-34b8-9aa3-40b74bc543ed</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <processors>
+                            <id>1c770b94-e4d2-399b-0000-000000000000</id>
+                            <parentGroupId>967765dc-f969-35a5-0000-000000000000</parentGroupId>
+                            <position>
+<x>72.0</x>
+<y>464.0</y>
+                            </position>
+                            <versionedComponentId>7ea8274a-19c4-38fa-aa77-1e656cdfd4ce</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.21.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Group</key>
+        <value>
+            <name>Group</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Owner</key>
+        <value>
+            <name>Owner</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Create Missing Directories</key>
+        <value>
+            <name>Create Missing Directories</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Permissions</key>
+        <value>
+            <name>Permissions</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Count</key>
+        <value>
+            <name>Maximum File Count</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Last Modified Time</key>
+        <value>
+            <name>Last Modified Time</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Directory</key>
+        <value>
+            <name>Directory</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Conflict Resolution Strategy</key>
+        <value>
+            <name>Conflict Resolution Strategy</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Create Missing Directories</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Directory</key>
+        <value>C:\Users\Administrador\ARQUIVOS\SGA\NiFi</value>
+    </entry>
+    <entry>
+        <key>Conflict Resolution Strategy</key>
+        <value>replace</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutFile</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.PutFile</type>
+                        </processors>
+                        <processors>
+                            <id>64ff2e2b-457f-3846-0000-000000000000</id>
+                            <parentGroupId>967765dc-f969-35a5-0000-000000000000</parentGroupId>
+                            <position>
+<x>80.0</x>
+<y>-8.0</y>
+                            </position>
+                            <versionedComponentId>c481f2ae-7701-34b8-9aa3-40b74bc543ed</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.21.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Keep Source File</key>
+        <value>
+            <name>Keep Source File</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Minimum File Age</key>
+        <value>
+            <name>Minimum File Age</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Polling Interval</key>
+        <value>
+            <name>Polling Interval</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Input Directory</key>
+        <value>
+            <name>Input Directory</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Age</key>
+        <value>
+            <name>Maximum File Age</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Batch Size</key>
+        <value>
+            <name>Batch Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Size</key>
+        <value>
+            <name>Maximum File Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Minimum File Size</key>
+        <value>
+            <name>Minimum File Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore Hidden Files</key>
+        <value>
+            <name>Ignore Hidden Files</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Recurse Subdirectories</key>
+        <value>
+            <name>Recurse Subdirectories</name>
+        </value>
+    </entry>
+    <entry>
+        <key>File Filter</key>
+        <value>
+            <name>File Filter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Path Filter</key>
+        <value>
+            <name>Path Filter</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Keep Source File</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>Minimum File Age</key>
+        <value>0 sec</value>
+    </entry>
+    <entry>
+        <key>Polling Interval</key>
+        <value>0 sec</value>
+    </entry>
+    <entry>
+        <key>Input Directory</key>
+        <value>C:\Users\Administrador\ARQUIVOS\SGA</value>
+    </entry>
+    <entry>
+        <key>Batch Size</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>Minimum File Size</key>
+        <value>0 B</value>
+    </entry>
+    <entry>
+        <key>Ignore Hidden Files</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Recurse Subdirectories</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>File Filter</key>
+        <value>associados so.json</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>60 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>GetFile</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.GetFile</type>
+                        </processors>
+                        <processors>
+                            <id>88461a87-1da1-3200-0000-000000000000</id>
+                            <parentGroupId>967765dc-f969-35a5-0000-000000000000</parentGroupId>
+                            <position>
+<x>80.0</x>
+<y>240.0</y>
+                            </position>
+                            <versionedComponentId>2666129c-976e-39b4-8676-409695ab3bba</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.21.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>put-db-record-allow-multiple-statements</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use statement.type Attribute</dependentValues>
+                <dependentValues>Use Record Path</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>put-db-record-allow-multiple-statements</name>
+        </value>
+    </entry>
+    <entry>
+        <key>table-schema-cache-size</key>
+        <value>
+            <name>table-schema-cache-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-schema-name</key>
+        <value>
+            <name>put-db-record-schema-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-field-containing-sql</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use statement.type Attribute</dependentValues>
+                <dependentValues>Use Record Path</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>put-db-record-field-containing-sql</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-table-identifiers</key>
+        <value>
+            <name>put-db-record-quoted-table-identifiers</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Statement Type Record Path</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use Record Path</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>Statement Type Record Path</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-column-behavior</key>
+        <value>
+            <name>put-db-record-unmatched-column-behavior</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-catalog-name</key>
+        <value>
+            <name>put-db-record-catalog-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-translate-field-names</key>
+        <value>
+            <name>put-db-record-translate-field-names</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-dcbp-service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+            <name>put-db-record-dcbp-service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-query-timeout</key>
+        <value>
+            <name>put-db-record-query-timeout</name>
+        </value>
+    </entry>
+    <entry>
+        <key>rollback-on-failure</key>
+        <value>
+            <name>rollback-on-failure</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-statement-type</key>
+        <value>
+            <name>put-db-record-statement-type</name>
+        </value>
+    </entry>
+    <entry>
+        <key>db-type</key>
+        <value>
+            <name>db-type</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-update-keys</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use statement.type Attribute</dependentValues>
+                <dependentValues>Use Record Path</dependentValues>
+                <dependentValues>UPSERT</dependentValues>
+                <dependentValues>UPDATE</dependentValues>
+                <dependentValues>SQL</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>put-db-record-update-keys</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-identifiers</key>
+        <value>
+            <name>put-db-record-quoted-identifiers</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-table-name</key>
+        <value>
+            <name>put-db-record-table-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-field-behavior</key>
+        <value>
+            <name>put-db-record-unmatched-field-behavior</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-max-batch-size</key>
+        <value>
+            <name>put-db-record-max-batch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-record-reader</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+            <name>put-db-record-record-reader</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Data Record Path</key>
+        <value>
+            <name>Data Record Path</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>put-db-record-allow-multiple-statements</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>table-schema-cache-size</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-table-identifiers</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-column-behavior</key>
+        <value>Fail on Unmatched Columns</value>
+    </entry>
+    <entry>
+        <key>put-db-record-translate-field-names</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>put-db-record-dcbp-service</key>
+        <value>2f96c95a-262c-3d1e-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>put-db-record-query-timeout</key>
+        <value>0 seconds</value>
+    </entry>
+    <entry>
+        <key>rollback-on-failure</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>put-db-record-statement-type</key>
+        <value>UPSERT</value>
+    </entry>
+    <entry>
+        <key>db-type</key>
+        <value>MySQL</value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-identifiers</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>put-db-record-table-name</key>
+        <value>sga_associados_so</value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-field-behavior</key>
+        <value>Ignore Unmatched Fields</value>
+    </entry>
+    <entry>
+        <key>put-db-record-max-batch-size</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>put-db-record-record-reader</key>
+        <value>af8ff115-6166-3d96-0000-000000000000</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutDatabaseRecord</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>retry</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.PutDatabaseRecord</type>
+                        </processors>
+                    </contents>
+                    <defaultBackPressureDataSizeThreshold>5 GB</defaultBackPressureDataSizeThreshold>
+                    <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                    <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                    <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                    <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                    <name>(SGA) Upsert - Associados - Solidy</name>
+                    <variables/>
+                </processGroups>
+                <processGroups>
+                    <id>b2819552-09d7-3044-0000-000000000000</id>
+                    <parentGroupId>029865d8-6506-34d0-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>24.0</x>
+                        <y>-280.0</y>
+                    </position>
+                    <versionedComponentId>d84206cc-aeee-324f-b181-f8c13b2079db</versionedComponentId>
+                    <comments></comments>
+                    <contents>
+                        <connections>
+                            <id>94c9d27d-f8da-3b37-0000-000000000000</id>
+                            <parentGroupId>b2819552-09d7-3044-0000-000000000000</parentGroupId>
+                            <versionedComponentId>03b59578-bc76-3cca-842f-ee4444ba0c76</versionedComponentId>
+                            <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>b2819552-09d7-3044-0000-000000000000</groupId>
+<id>ec16c6d8-597a-3e5b-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>2666129c-976e-39b4-8676-409695ab3bba</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>b2819552-09d7-3044-0000-000000000000</groupId>
+<id>d84f6add-7f33-3f66-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>4ae65709-4e37-3ef6-94d0-7caff0268159</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>ed647427-859b-31c2-0000-000000000000</id>
+                            <parentGroupId>b2819552-09d7-3044-0000-000000000000</parentGroupId>
+                            <versionedComponentId>78f5b848-d30a-320f-841d-391a32731997</versionedComponentId>
+                            <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>b2819552-09d7-3044-0000-000000000000</groupId>
+<id>bc172c9d-a814-341f-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>1d24e880-793c-3eba-bc3e-43804a826ad5</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>b2819552-09d7-3044-0000-000000000000</groupId>
+<id>ec16c6d8-597a-3e5b-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>2666129c-976e-39b4-8676-409695ab3bba</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <processors>
+                            <id>bc172c9d-a814-341f-0000-000000000000</id>
+                            <parentGroupId>b2819552-09d7-3044-0000-000000000000</parentGroupId>
+                            <position>
+<x>72.0</x>
+<y>472.0</y>
+                            </position>
+                            <versionedComponentId>1d24e880-793c-3eba-bc3e-43804a826ad5</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.21.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Group</key>
+        <value>
+            <name>Group</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Owner</key>
+        <value>
+            <name>Owner</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Create Missing Directories</key>
+        <value>
+            <name>Create Missing Directories</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Permissions</key>
+        <value>
+            <name>Permissions</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Count</key>
+        <value>
+            <name>Maximum File Count</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Last Modified Time</key>
+        <value>
+            <name>Last Modified Time</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Directory</key>
+        <value>
+            <name>Directory</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Conflict Resolution Strategy</key>
+        <value>
+            <name>Conflict Resolution Strategy</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Create Missing Directories</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Directory</key>
+        <value>C:\Users\Administrador\ARQUIVOS\SGA\NiFi</value>
+    </entry>
+    <entry>
+        <key>Conflict Resolution Strategy</key>
+        <value>replace</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutFile</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.PutFile</type>
+                        </processors>
+                        <processors>
+                            <id>d84f6add-7f33-3f66-0000-000000000000</id>
+                            <parentGroupId>b2819552-09d7-3044-0000-000000000000</parentGroupId>
+                            <position>
+<x>80.0</x>
+<y>-8.0</y>
+                            </position>
+                            <versionedComponentId>4ae65709-4e37-3ef6-94d0-7caff0268159</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.21.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Keep Source File</key>
+        <value>
+            <name>Keep Source File</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Minimum File Age</key>
+        <value>
+            <name>Minimum File Age</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Polling Interval</key>
+        <value>
+            <name>Polling Interval</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Input Directory</key>
+        <value>
+            <name>Input Directory</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Age</key>
+        <value>
+            <name>Maximum File Age</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Batch Size</key>
+        <value>
+            <name>Batch Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Size</key>
+        <value>
+            <name>Maximum File Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Minimum File Size</key>
+        <value>
+            <name>Minimum File Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore Hidden Files</key>
+        <value>
+            <name>Ignore Hidden Files</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Recurse Subdirectories</key>
+        <value>
+            <name>Recurse Subdirectories</name>
+        </value>
+    </entry>
+    <entry>
+        <key>File Filter</key>
+        <value>
+            <name>File Filter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Path Filter</key>
+        <value>
+            <name>Path Filter</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Keep Source File</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>Minimum File Age</key>
+        <value>0 sec</value>
+    </entry>
+    <entry>
+        <key>Polling Interval</key>
+        <value>0 sec</value>
+    </entry>
+    <entry>
+        <key>Input Directory</key>
+        <value>C:\Users\Administrador\ARQUIVOS\SGA</value>
+    </entry>
+    <entry>
+        <key>Batch Size</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>Minimum File Size</key>
+        <value>0 B</value>
+    </entry>
+    <entry>
+        <key>Ignore Hidden Files</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Recurse Subdirectories</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>File Filter</key>
+        <value>associados np.json</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>60 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>GetFile</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.GetFile</type>
+                        </processors>
+                        <processors>
+                            <id>ec16c6d8-597a-3e5b-0000-000000000000</id>
+                            <parentGroupId>b2819552-09d7-3044-0000-000000000000</parentGroupId>
+                            <position>
+<x>80.0</x>
+<y>240.0</y>
+                            </position>
+                            <versionedComponentId>2666129c-976e-39b4-8676-409695ab3bba</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.21.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>put-db-record-allow-multiple-statements</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use statement.type Attribute</dependentValues>
+                <dependentValues>Use Record Path</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>put-db-record-allow-multiple-statements</name>
+        </value>
+    </entry>
+    <entry>
+        <key>table-schema-cache-size</key>
+        <value>
+            <name>table-schema-cache-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-schema-name</key>
+        <value>
+            <name>put-db-record-schema-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-field-containing-sql</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use statement.type Attribute</dependentValues>
+                <dependentValues>Use Record Path</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>put-db-record-field-containing-sql</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-table-identifiers</key>
+        <value>
+            <name>put-db-record-quoted-table-identifiers</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Statement Type Record Path</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use Record Path</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>Statement Type Record Path</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-column-behavior</key>
+        <value>
+            <name>put-db-record-unmatched-column-behavior</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-catalog-name</key>
+        <value>
+            <name>put-db-record-catalog-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-translate-field-names</key>
+        <value>
+            <name>put-db-record-translate-field-names</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-dcbp-service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+            <name>put-db-record-dcbp-service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-query-timeout</key>
+        <value>
+            <name>put-db-record-query-timeout</name>
+        </value>
+    </entry>
+    <entry>
+        <key>rollback-on-failure</key>
+        <value>
+            <name>rollback-on-failure</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-statement-type</key>
+        <value>
+            <name>put-db-record-statement-type</name>
+        </value>
+    </entry>
+    <entry>
+        <key>db-type</key>
+        <value>
+            <name>db-type</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-update-keys</key>
+        <value>
+            <dependencies>
+                <dependentValues>Use statement.type Attribute</dependentValues>
+                <dependentValues>Use Record Path</dependentValues>
+                <dependentValues>UPSERT</dependentValues>
+                <dependentValues>UPDATE</dependentValues>
+                <dependentValues>SQL</dependentValues>
+                <propertyName>put-db-record-statement-type</propertyName>
+            </dependencies>
+            <name>put-db-record-update-keys</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-identifiers</key>
+        <value>
+            <name>put-db-record-quoted-identifiers</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-table-name</key>
+        <value>
+            <name>put-db-record-table-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-field-behavior</key>
+        <value>
+            <name>put-db-record-unmatched-field-behavior</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-max-batch-size</key>
+        <value>
+            <name>put-db-record-max-batch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>put-db-record-record-reader</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+            <name>put-db-record-record-reader</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Data Record Path</key>
+        <value>
+            <name>Data Record Path</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>put-db-record-allow-multiple-statements</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>table-schema-cache-size</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-table-identifiers</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-column-behavior</key>
+        <value>Fail on Unmatched Columns</value>
+    </entry>
+    <entry>
+        <key>put-db-record-translate-field-names</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>put-db-record-dcbp-service</key>
+        <value>ccd80b51-d627-38ea-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>put-db-record-query-timeout</key>
+        <value>0 seconds</value>
+    </entry>
+    <entry>
+        <key>rollback-on-failure</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>put-db-record-statement-type</key>
+        <value>UPSERT</value>
+    </entry>
+    <entry>
+        <key>db-type</key>
+        <value>MySQL</value>
+    </entry>
+    <entry>
+        <key>put-db-record-quoted-identifiers</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>put-db-record-table-name</key>
+        <value>sga_associados_np</value>
+    </entry>
+    <entry>
+        <key>put-db-record-unmatched-field-behavior</key>
+        <value>Ignore Unmatched Fields</value>
+    </entry>
+    <entry>
+        <key>put-db-record-max-batch-size</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>put-db-record-record-reader</key>
+        <value>af8ff115-6166-3d96-0000-000000000000</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutDatabaseRecord</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>retry</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.PutDatabaseRecord</type>
+                        </processors>
+                    </contents>
+                    <defaultBackPressureDataSizeThreshold>5 GB</defaultBackPressureDataSizeThreshold>
+                    <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                    <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                    <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                    <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                    <name>(SGA) Upsert - Associados - Nova Proteção</name>
+                    <variables/>
+                </processGroups>
+            </contents>
+            <defaultBackPressureDataSizeThreshold>15 GB</defaultBackPressureDataSizeThreshold>
+            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+            <name>(SGA) Upsert - Associados - All</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>05/19/2023 09:10:31 BRT</timestamp>
+</template>
