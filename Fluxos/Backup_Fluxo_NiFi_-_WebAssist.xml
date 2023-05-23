@@ -2,7 +2,7 @@
 <template encoding-version="1.3">
     <description></description>
     <groupId>33aa7481-0188-1000-dba3-5466b46e4bee</groupId>
-    <name>Backup Fluxo NiFi - WebAssist v.1.1</name>
+    <name>Backup Fluxo NiFi - WebAssist v.1.2</name>
     <snippet>
         <controllerServices>
             <id>43a9d351-4724-3807-0000-000000000000</id>
@@ -1440,7 +1440,7 @@
     </entry>
     <entry>
         <key>File Filter</key>
-        <value>relatorio_de_atendimento completo NOVA PROTECAO</value>
+        <value>relatorio_de_atendimento completo NOVA PROTECAO.json</value>
     </entry>
     <entry>
         <key>Path Filter</key>
@@ -2515,7 +2515,7 @@
     </entry>
     <entry>
         <key>File Filter</key>
-        <value>relatorio_de_atendimento completo MOTO CLUBE</value>
+        <value>relatorio_de_atendimento completo MOTO CLUBE.json</value>
     </entry>
     <entry>
         <key>Path Filter</key>
@@ -3519,5 +3519,5 @@
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>05/23/2023 17:25:05 BRT</timestamp>
+    <timestamp>05/23/2023 17:28:24 BRT</timestamp>
 </template>
