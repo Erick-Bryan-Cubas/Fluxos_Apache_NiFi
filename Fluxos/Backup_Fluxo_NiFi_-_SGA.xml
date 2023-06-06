@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template encoding-version="1.3">
     <description></description>
-    <groupId>33aa7481-0188-1000-dba3-5466b46e4bee</groupId>
-    <name>Backup Fluxo NiFi - SGA</name>
+    <groupId>53797246-0188-1000-70fe-4e8f89c50e1d</groupId>
+    <name>Backup_Fluxo_NiFi_-_SGA (06-06-2023)</name>
     <snippet>
         <controllerServices>
             <id>43a9d351-4724-3807-0000-000000000000</id>
-            <parentGroupId>04c63707-0cff-35ce-0000-000000000000</parentGroupId>
+            <parentGroupId>dce64f36-e0b8-332f-0000-000000000000</parentGroupId>
             <versionedComponentId>43a9d351-4724-3807-9893-4748a5438a8a</versionedComponentId>
             <bulletinLevel>WARN</bulletinLevel>
             <bundle>
@@ -139,8 +139,26 @@
                     <value>com.mysql.cj.jdbc.Driver</value>
                 </entry>
                 <entry>
+                    <key>database-driver-locations</key>
+                </entry>
+                <entry>
+                    <key>kerberos-user-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                </entry>
+                <entry>
+                    <key>kerberos-password</key>
+                </entry>
+                <entry>
                     <key>Database User</key>
                     <value>srv_arq</value>
+                </entry>
+                <entry>
+                    <key>Password</key>
                 </entry>
                 <entry>
                     <key>Max Wait Time</key>
@@ -149,6 +167,9 @@
                 <entry>
                     <key>Max Total Connections</key>
                     <value>8</value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
                 </entry>
                 <entry>
                     <key>dbcp-min-idle-conns</key>
@@ -180,7 +201,7 @@
         </controllerServices>
         <controllerServices>
             <id>6d9433c0-3879-3cbf-0000-000000000000</id>
-            <parentGroupId>04c63707-0cff-35ce-0000-000000000000</parentGroupId>
+            <parentGroupId>dce64f36-e0b8-332f-0000-000000000000</parentGroupId>
             <versionedComponentId>6d9433c0-3879-3cbf-882d-67e055bba1cf</versionedComponentId>
             <bulletinLevel>WARN</bulletinLevel>
             <bundle>
@@ -317,8 +338,23 @@
                     <value>C:\NiFi\lib\mysql-connector-j-8.0.32.jar</value>
                 </entry>
                 <entry>
+                    <key>kerberos-user-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                </entry>
+                <entry>
+                    <key>kerberos-password</key>
+                </entry>
+                <entry>
                     <key>Database User</key>
                     <value>srv_arq</value>
+                </entry>
+                <entry>
+                    <key>Password</key>
                 </entry>
                 <entry>
                     <key>Max Wait Time</key>
@@ -327,6 +363,9 @@
                 <entry>
                     <key>Max Total Connections</key>
                     <value>8</value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
                 </entry>
                 <entry>
                     <key>dbcp-min-idle-conns</key>
@@ -358,7 +397,7 @@
         </controllerServices>
         <controllerServices>
             <id>b4a3a43a-1e3d-3cfa-0000-000000000000</id>
-            <parentGroupId>04c63707-0cff-35ce-0000-000000000000</parentGroupId>
+            <parentGroupId>dce64f36-e0b8-332f-0000-000000000000</parentGroupId>
             <versionedComponentId>b4a3a43a-1e3d-3cfa-adff-d2fabfb70c45</versionedComponentId>
             <bulletinLevel>WARN</bulletinLevel>
             <bundle>
@@ -387,7 +426,7 @@
         </controllerServices>
         <controllerServices>
             <id>cadf3836-09f0-3113-0000-000000000000</id>
-            <parentGroupId>04c63707-0cff-35ce-0000-000000000000</parentGroupId>
+            <parentGroupId>dce64f36-e0b8-332f-0000-000000000000</parentGroupId>
             <versionedComponentId>cadf3836-09f0-3113-9108-bc880cb85562</versionedComponentId>
             <bulletinLevel>WARN</bulletinLevel>
             <bundle>
@@ -529,8 +568,17 @@
                     <value>infer-schema</value>
                 </entry>
                 <entry>
+                    <key>schema-registry</key>
+                </entry>
+                <entry>
                     <key>schema-name</key>
                     <value>${schema.name}</value>
+                </entry>
+                <entry>
+                    <key>schema-version</key>
+                </entry>
+                <entry>
+                    <key>schema-branch</key>
                 </entry>
                 <entry>
                     <key>schema-text</key>
@@ -545,8 +593,20 @@
                     <value>ROOT_NODE</value>
                 </entry>
                 <entry>
+                    <key>starting-field-name</key>
+                </entry>
+                <entry>
                     <key>schema-application-strategy</key>
                     <value>SELECTED_PART</value>
+                </entry>
+                <entry>
+                    <key>Date Format</key>
+                </entry>
+                <entry>
+                    <key>Time Format</key>
+                </entry>
+                <entry>
+                    <key>Timestamp Format</key>
                 </entry>
             </properties>
             <state>ENABLED</state>
@@ -554,7 +614,7 @@
         </controllerServices>
         <controllerServices>
             <id>dcfbc64f-2206-3637-0000-000000000000</id>
-            <parentGroupId>04c63707-0cff-35ce-0000-000000000000</parentGroupId>
+            <parentGroupId>dce64f36-e0b8-332f-0000-000000000000</parentGroupId>
             <versionedComponentId>dcfbc64f-2206-3637-8c74-a16e67fda4e7</versionedComponentId>
             <bulletinLevel>WARN</bulletinLevel>
             <bundle>
@@ -691,8 +751,23 @@
                     <value>C:\NiFi\lib\mysql-connector-j-8.0.32.jar</value>
                 </entry>
                 <entry>
+                    <key>kerberos-user-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                </entry>
+                <entry>
+                    <key>kerberos-password</key>
+                </entry>
+                <entry>
                     <key>Database User</key>
                     <value>srv_arq</value>
+                </entry>
+                <entry>
+                    <key>Password</key>
                 </entry>
                 <entry>
                     <key>Max Wait Time</key>
@@ -701,6 +776,9 @@
                 <entry>
                     <key>Max Total Connections</key>
                     <value>8</value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
                 </entry>
                 <entry>
                     <key>dbcp-min-idle-conns</key>
@@ -732,11 +810,12 @@
         </controllerServices>
         <processGroups>
             <id>fb50f609-e9e3-3bdb-0000-000000000000</id>
-            <parentGroupId>04c63707-0cff-35ce-0000-000000000000</parentGroupId>
+            <parentGroupId>dce64f36-e0b8-332f-0000-000000000000</parentGroupId>
             <position>
                 <x>0.0</x>
                 <y>0.0</y>
             </position>
+            <versionedComponentId>fb50f609-e9e3-3bdb-a45f-a8db65a9c78a</versionedComponentId>
             <comments></comments>
             <contents>
                 <processGroups>
@@ -746,6 +825,7 @@
                         <x>1304.0</x>
                         <y>320.0</y>
                     </position>
+                    <versionedComponentId>11328a55-d609-3b04-be2e-a878d1c4c14e</versionedComponentId>
                     <comments></comments>
                     <contents>
                         <labels>
@@ -755,6 +835,7 @@
 <x>-216.0</x>
 <y>-472.0</y>
                             </position>
+                            <versionedComponentId>22e3099a-1daa-3879-8230-b4140f605101</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -772,6 +853,7 @@
 <x>-216.0</x>
 <y>-248.0</y>
                             </position>
+                            <versionedComponentId>332bb07e-11b4-3c2e-839b-eb8819a10797</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -789,6 +871,7 @@
 <x>-216.0</x>
 <y>-696.0</y>
                             </position>
+                            <versionedComponentId>80752b7b-3ede-310c-a7f9-26fb598651cd</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -840,12 +923,14 @@
 <connections>
     <id>acf78543-0aa3-3a03-0000-000000000000</id>
     <parentGroupId>5cc0680b-1fe9-32bf-0000-000000000000</parentGroupId>
+    <versionedComponentId>acf78543-0aa3-3a03-9751-447ecaee937e</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>5cc0680b-1fe9-32bf-0000-000000000000</groupId>
         <id>801afee8-cd8a-3617-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>801afee8-cd8a-3617-86f1-cedb7d89b3a1</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -976,6 +1061,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -1011,6 +1111,7 @@
         <x>440.0</x>
         <y>464.0</y>
     </position>
+    <versionedComponentId>801afee8-cd8a-3617-86f1-cedb7d89b3a1</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -1087,6 +1188,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -1222,6 +1338,9 @@
                 <value>Boletos Produtos mc.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -1246,8 +1365,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -1460,8 +1585,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>6d9433c0-3879-3cbf-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -1478,6 +1615,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -1728,6 +1871,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -1840,6 +1998,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -2057,8 +2230,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>43a9d351-4724-3807-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -2075,6 +2260,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -2243,6 +2434,9 @@
                 <value>Boletos Produtos so.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -2267,8 +2461,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -2315,12 +2515,14 @@
 <connections>
     <id>57f061a1-0d72-35a0-0000-000000000000</id>
     <parentGroupId>cf481af4-88a6-3f25-0000-000000000000</parentGroupId>
+    <versionedComponentId>57f061a1-0d72-35a0-a676-4bc4292343e9</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>cf481af4-88a6-3f25-0000-000000000000</groupId>
         <id>d0203d3e-a6e9-3474-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>d0203d3e-a6e9-3474-ab64-a73f2b614ebb</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -2582,8 +2784,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>dcfbc64f-2206-3637-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -2600,6 +2814,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -2768,6 +2988,9 @@
                 <value>Boletos Produtos np.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -2792,8 +3015,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -2903,6 +3132,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -2938,6 +3182,7 @@
         <x>392.0</x>
         <y>432.0</y>
     </position>
+    <versionedComponentId>d0203d3e-a6e9-3474-ab64-a73f2b614ebb</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -3015,6 +3260,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -3078,6 +3338,7 @@
 <x>576.0</x>
 <y>-120.0</y>
                             </position>
+                            <versionedComponentId>13ff305e-1ee6-3ce7-ab28-c5b05f668561</versionedComponentId>
                             <height>208.0</height>
                             <label></label>
                             <style>
@@ -3100,6 +3361,7 @@
 <x>576.0</x>
 <y>-360.0</y>
                             </position>
+                            <versionedComponentId>7228c102-2075-37ce-a805-029348e1eecf</versionedComponentId>
                             <height>208.0</height>
                             <label></label>
                             <style>
@@ -3122,6 +3384,7 @@
 <x>576.0</x>
 <y>-600.0</y>
                             </position>
+                            <versionedComponentId>f9b3f8dd-f8f8-3093-a222-2b1a5add97b2</versionedComponentId>
                             <height>208.0</height>
                             <label></label>
                             <style>
@@ -3231,30 +3494,6 @@
     </source>
     <zIndex>0</zIndex>
 </connections>
-<labels>
-    <id>761dd6a6-333a-3985-0000-000000000000</id>
-    <parentGroupId>12a79852-b18b-36df-0000-000000000000</parentGroupId>
-    <position>
-        <x>394.0446908019544</x>
-        <y>-601.6077191998659</y>
-    </position>
-    <height>148.0</height>
-    <style/>
-    <width>148.0</width>
-    <zIndex>0</zIndex>
-</labels>
-<labels>
-    <id>91fc4b36-6281-3a93-0000-000000000000</id>
-    <parentGroupId>12a79852-b18b-36df-0000-000000000000</parentGroupId>
-    <position>
-        <x>190.84047254292864</x>
-        <y>-606.8857508429573</y>
-    </position>
-    <height>148.0</height>
-    <style/>
-    <width>148.0</width>
-    <zIndex>0</zIndex>
-</labels>
 <processors>
     <id>0db61c76-ffe1-3d56-0000-000000000000</id>
     <parentGroupId>12a79852-b18b-36df-0000-000000000000</parentGroupId>
@@ -3443,8 +3682,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>43a9d351-4724-3807-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -3461,6 +3712,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -3608,6 +3865,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -3720,6 +3992,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -3855,6 +4142,9 @@
                 <value>associados so.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -3879,8 +4169,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -3983,12 +4279,14 @@
 <connections>
     <id>fbd5a684-4045-32df-0000-000000000000</id>
     <parentGroupId>d02ff18b-6927-32af-0000-000000000000</parentGroupId>
+    <versionedComponentId>fbd5a684-4045-32df-9e0d-6456ef6e9e24</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>d02ff18b-6927-32af-0000-000000000000</groupId>
         <id>b95c85fa-9df4-3dea-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>b95c85fa-9df4-3dea-be0e-4ea87b71169f</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -4194,8 +4492,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>dcfbc64f-2206-3637-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -4212,6 +4522,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -4380,6 +4696,9 @@
                 <value>associados np.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -4404,8 +4723,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -4437,6 +4762,7 @@
         <x>624.0</x>
         <y>384.0</y>
     </position>
+    <versionedComponentId>b95c85fa-9df4-3dea-be0e-4ea87b71169f</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -4513,6 +4839,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -4627,6 +4968,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -4705,12 +5061,14 @@
 <connections>
     <id>caf98193-aa4e-322a-0000-000000000000</id>
     <parentGroupId>fc6df268-d66a-3db6-0000-000000000000</parentGroupId>
+    <versionedComponentId>caf98193-aa4e-322a-bc3e-bb45361aa56f</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>fc6df268-d66a-3db6-0000-000000000000</groupId>
         <id>576ce7f7-9019-3d19-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>576ce7f7-9019-3d19-9f88-cc1a21c43de7</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -4944,8 +5302,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>6d9433c0-3879-3cbf-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -4962,6 +5332,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -5130,6 +5506,9 @@
                 <value>associados mc.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -5154,8 +5533,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -5187,6 +5572,7 @@
         <x>544.0</x>
         <y>440.0</y>
     </position>
+    <versionedComponentId>576ce7f7-9019-3d19-9f88-cc1a21c43de7</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -5263,6 +5649,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -5377,6 +5778,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -5427,9 +5843,10 @@
                     <id>20f02fe5-1397-3506-0000-000000000000</id>
                     <parentGroupId>fb50f609-e9e3-3bdb-0000-000000000000</parentGroupId>
                     <position>
-                        <x>904.0</x>
+                        <x>896.0</x>
                         <y>320.0</y>
                     </position>
+                    <versionedComponentId>20f02fe5-1397-3506-b418-feb17046b5bc</versionedComponentId>
                     <comments></comments>
                     <contents>
                         <labels>
@@ -5439,6 +5856,7 @@
 <x>-216.0</x>
 <y>-472.0</y>
                             </position>
+                            <versionedComponentId>2b8f56d6-0775-304f-b430-6b855472db36</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -5456,6 +5874,7 @@
 <x>-216.0</x>
 <y>-696.0</y>
                             </position>
+                            <versionedComponentId>3daee2d9-859f-371d-86a3-c85b1207a83a</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -5473,6 +5892,7 @@
 <x>-216.0</x>
 <y>-248.0</y>
                             </position>
+                            <versionedComponentId>96ab2b08-58da-3ce3-a4fc-a0828a9bb5a1</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -5524,12 +5944,14 @@
 <connections>
     <id>bc679ef8-9695-3f2a-0000-000000000000</id>
     <parentGroupId>9feb496e-1c02-3e2e-0000-000000000000</parentGroupId>
+    <versionedComponentId>bc679ef8-9695-3f2a-a1a0-864680f36e0f</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>9feb496e-1c02-3e2e-0000-000000000000</groupId>
         <id>d3d30abf-b8ca-353a-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>d3d30abf-b8ca-353a-8315-e8571c972cfa</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -5659,6 +6081,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -5876,8 +6313,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>dcfbc64f-2206-3637-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -5894,6 +6343,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -6062,6 +6517,9 @@
                 <value>Veículos Boletos np.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -6086,8 +6544,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -6119,6 +6583,7 @@
         <x>392.0</x>
         <y>432.0</y>
     </position>
+    <versionedComponentId>d3d30abf-b8ca-353a-8315-e8571c972cfa</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -6196,6 +6661,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -6246,12 +6726,14 @@
 <connections>
     <id>777345fc-1b8c-3248-0000-000000000000</id>
     <parentGroupId>adc399a2-fffe-3ac4-0000-000000000000</parentGroupId>
+    <versionedComponentId>777345fc-1b8c-3248-80d9-2caec3fd7374</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>adc399a2-fffe-3ac4-0000-000000000000</groupId>
         <id>d6f7de85-2791-3270-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>d6f7de85-2791-3270-9410-01c8a37a9e72</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -6410,6 +6892,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -6445,6 +6942,7 @@
         <x>440.0</x>
         <y>464.0</y>
     </position>
+    <versionedComponentId>d6f7de85-2791-3270-9410-01c8a37a9e72</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -6521,6 +7019,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -6738,8 +7251,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>6d9433c0-3879-3cbf-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -6756,6 +7281,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -6924,6 +7455,9 @@
                 <value>Veículos Boletos mc.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -6948,8 +7482,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -7161,6 +7701,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -7378,8 +7933,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>43a9d351-4724-3807-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -7396,6 +7963,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -7543,6 +8116,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -7677,6 +8265,9 @@
                 <value>Veículos Boletos so.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -7701,8 +8292,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -7752,6 +8349,7 @@
                         <x>904.0</x>
                         <y>120.0</y>
                     </position>
+                    <versionedComponentId>2fe999d4-3257-3ce9-9377-d43f86ec435b</versionedComponentId>
                     <comments></comments>
                     <contents>
                         <labels>
@@ -7761,6 +8359,7 @@
 <x>-216.0</x>
 <y>-472.0</y>
                             </position>
+                            <versionedComponentId>0f5d66fc-07f0-3c1a-8ddf-93102061054a</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -7778,6 +8377,7 @@
 <x>-216.0</x>
 <y>-248.0</y>
                             </position>
+                            <versionedComponentId>4eb5a223-5c15-3f4c-9a0a-edae1522cf92</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -7795,6 +8395,7 @@
 <x>-216.0</x>
 <y>-696.0</y>
                             </position>
+                            <versionedComponentId>bbf6159f-8b4d-33f9-9a17-66e44906f754</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -8087,8 +8688,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>43a9d351-4724-3807-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -8105,6 +8718,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -8252,6 +8871,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -8364,6 +8998,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -8499,6 +9148,9 @@
                 <value>historico de veiculos so.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -8523,8 +9175,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -8627,12 +9285,14 @@
 <connections>
     <id>91d35098-3f00-3abb-0000-000000000000</id>
     <parentGroupId>a5870e50-a508-34ce-0000-000000000000</parentGroupId>
+    <versionedComponentId>91d35098-3f00-3abb-a8b3-8bc7cbf85006</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>a5870e50-a508-34ce-0000-000000000000</groupId>
         <id>d64213b0-7029-3c5f-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>d64213b0-7029-3c5f-8054-b8e9fe43225c</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -8734,6 +9394,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -8951,8 +9626,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>6d9433c0-3879-3cbf-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -8969,6 +9656,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -9137,6 +9830,9 @@
                 <value>historico de veiculos mc.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -9161,8 +9857,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -9194,6 +9896,7 @@
         <x>440.0</x>
         <y>464.0</y>
     </position>
+    <versionedComponentId>d64213b0-7029-3c5f-8054-b8e9fe43225c</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -9270,6 +9973,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -9349,12 +10067,14 @@
 <connections>
     <id>7e25d3ac-58b0-35fc-0000-000000000000</id>
     <parentGroupId>dd0f1a9c-2dc8-300a-0000-000000000000</parentGroupId>
+    <versionedComponentId>7e25d3ac-58b0-35fc-a712-830b7ae76ac0</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>dd0f1a9c-2dc8-300a-0000-000000000000</groupId>
         <id>57e79f67-a340-3e14-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>57e79f67-a340-3e14-953d-64b160c54f29</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -9506,6 +10226,9 @@
                 <value>historico de veiculos np.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -9530,8 +10253,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -9563,6 +10292,7 @@
         <x>392.0</x>
         <y>432.0</y>
     </position>
+    <versionedComponentId>57e79f67-a340-3e14-953d-64b160c54f29</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -9639,6 +10369,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -9856,8 +10601,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>dcfbc64f-2206-3637-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -9874,6 +10631,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -10021,6 +10784,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -10074,6 +10852,7 @@
                         <x>1304.0</x>
                         <y>120.0</y>
                     </position>
+                    <versionedComponentId>68459506-1867-34c2-a661-664cfb5ba8b5</versionedComponentId>
                     <comments></comments>
                     <contents>
                         <labels>
@@ -10083,6 +10862,7 @@
 <x>-216.0</x>
 <y>-472.0</y>
                             </position>
+                            <versionedComponentId>638f1129-3e7e-3121-bcb2-7e38864ddda2</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -10100,6 +10880,7 @@
 <x>-216.0</x>
 <y>-696.0</y>
                             </position>
+                            <versionedComponentId>bc25cc8d-61f3-3f7e-a375-d13b443021db</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -10117,6 +10898,7 @@
 <x>-216.0</x>
 <y>-248.0</y>
                             </position>
+                            <versionedComponentId>e5d0f4f4-c8fe-3128-a435-c8070406bd49</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -10140,12 +10922,14 @@
 <connections>
     <id>867e96b9-c55e-342b-0000-000000000000</id>
     <parentGroupId>8098b27a-049c-367e-0000-000000000000</parentGroupId>
+    <versionedComponentId>867e96b9-c55e-342b-8c6a-917b021265df</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>8098b27a-049c-367e-0000-000000000000</groupId>
         <id>741d4947-770f-3aaf-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>741d4947-770f-3aaf-a77c-f8bcab52755b</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -10304,6 +11088,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -10339,6 +11138,7 @@
         <x>392.0</x>
         <y>432.0</y>
     </position>
+    <versionedComponentId>741d4947-770f-3aaf-a77c-f8bcab52755b</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -10415,6 +11215,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -10550,6 +11365,9 @@
                 <value>Boletos Taxas np.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -10574,8 +11392,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -10788,8 +11612,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>dcfbc64f-2206-3637-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -10806,6 +11642,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -10918,12 +11760,14 @@
 <connections>
     <id>871c857d-4889-31d4-0000-000000000000</id>
     <parentGroupId>ad42909e-5401-3e68-0000-000000000000</parentGroupId>
+    <versionedComponentId>871c857d-4889-31d4-a13f-f443e5a77974</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>ad42909e-5401-3e68-0000-000000000000</groupId>
         <id>cdd6d961-1352-34e6-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>cdd6d961-1352-34e6-905c-6986acd01d3a</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -11157,8 +12001,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>6d9433c0-3879-3cbf-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -11175,6 +12031,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -11322,6 +12184,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -11456,6 +12333,9 @@
                 <value>Boletos Taxas mc.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -11480,8 +12360,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -11513,6 +12399,7 @@
         <x>440.0</x>
         <y>464.0</y>
     </position>
+    <versionedComponentId>cdd6d961-1352-34e6-905c-6986acd01d3a</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -11589,6 +12476,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -11909,8 +12811,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>43a9d351-4724-3807-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -11927,6 +12841,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -12074,6 +12994,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -12186,6 +13121,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -12321,6 +13271,9 @@
                 <value>Boletos Taxas so.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -12345,8 +13298,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -12393,9 +13352,10 @@
                     <id>c93403ca-7811-3570-0000-000000000000</id>
                     <parentGroupId>fb50f609-e9e3-3bdb-0000-000000000000</parentGroupId>
                     <position>
-                        <x>505.38934326171875</x>
+                        <x>504.0</x>
                         <y>120.0</y>
                     </position>
+                    <versionedComponentId>c93403ca-7811-3570-9d1c-823c6f4e27ef</versionedComponentId>
                     <comments></comments>
                     <contents>
                         <labels>
@@ -12405,6 +13365,7 @@
 <x>576.0</x>
 <y>-360.0</y>
                             </position>
+                            <versionedComponentId>061f258f-86f5-3eee-89f1-b31274701df6</versionedComponentId>
                             <height>208.0</height>
                             <label></label>
                             <style>
@@ -12427,6 +13388,7 @@
 <x>576.0</x>
 <y>-120.0</y>
                             </position>
+                            <versionedComponentId>50c5b038-4818-3e7f-a34d-47c501896f8f</versionedComponentId>
                             <height>208.0</height>
                             <label></label>
                             <style>
@@ -12449,6 +13411,7 @@
 <x>576.0</x>
 <y>-600.0</y>
                             </position>
+                            <versionedComponentId>78818024-0a0d-3db2-8b40-8d3dd53bd396</versionedComponentId>
                             <height>208.0</height>
                             <label></label>
                             <style>
@@ -12746,8 +13709,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>43a9d351-4724-3807-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -12764,6 +13739,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -12911,6 +13892,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -13045,6 +14041,9 @@
                 <value>situacao so.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -13069,8 +14068,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -13180,6 +14185,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -13230,12 +14250,14 @@
 <connections>
     <id>389ea78d-a190-343b-0000-000000000000</id>
     <parentGroupId>5d04afc6-f5b0-394b-0000-000000000000</parentGroupId>
+    <versionedComponentId>389ea78d-a190-343b-a9fb-ef8a8b9edc3c</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>5d04afc6-f5b0-394b-0000-000000000000</groupId>
         <id>62582480-c849-35d2-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>62582480-c849-35d2-9926-34e9c7959aaf</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -13415,6 +14437,9 @@
                 <value>situacao np.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -13439,8 +14464,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -13653,8 +14684,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>dcfbc64f-2206-3637-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -13671,6 +14714,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -13818,6 +14867,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -13853,6 +14917,7 @@
         <x>624.0</x>
         <y>384.0</y>
     </position>
+    <versionedComponentId>62582480-c849-35d2-9926-34e9c7959aaf</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -13929,6 +14994,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -14008,12 +15088,14 @@
 <connections>
     <id>7450ae97-a954-321b-0000-000000000000</id>
     <parentGroupId>f05b5f11-8063-3dff-0000-000000000000</parentGroupId>
+    <versionedComponentId>7450ae97-a954-321b-b6d0-d6dd52f847b5</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>f05b5f11-8063-3dff-0000-000000000000</groupId>
         <id>bb7bc223-2a40-3757-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>bb7bc223-2a40-3757-97fe-864f78704342</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -14247,8 +15329,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>6d9433c0-3879-3cbf-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -14265,6 +15359,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -14412,6 +15512,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -14447,6 +15562,7 @@
         <x>544.0</x>
         <y>440.0</y>
     </position>
+    <versionedComponentId>bb7bc223-2a40-3757-97fe-864f78704342</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -14523,6 +15639,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -14658,6 +15789,9 @@
                 <value>situacao mc.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -14682,8 +15816,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -14733,6 +15873,7 @@
                         <x>905.3893432617188</x>
                         <y>-80.0</y>
                     </position>
+                    <versionedComponentId>cd388758-a12d-353e-a1a7-14d4c9e7be2d</versionedComponentId>
                     <comments></comments>
                     <contents>
                         <labels>
@@ -14742,6 +15883,7 @@
 <x>-216.0</x>
 <y>-696.0</y>
                             </position>
+                            <versionedComponentId>3cd89ef2-25b8-3956-ae4d-a60eb5ad31b2</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -14759,6 +15901,7 @@
 <x>-216.0</x>
 <y>-248.0</y>
                             </position>
+                            <versionedComponentId>a17d88b2-0807-351d-a303-e1f661390afa</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -14776,6 +15919,7 @@
 <x>-216.0</x>
 <y>-472.0</y>
                             </position>
+                            <versionedComponentId>be85f3fa-09b7-38f1-8182-f8b982b14d64</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -15068,8 +16212,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>43a9d351-4724-3807-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -15086,6 +16242,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -15233,6 +16395,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -15367,6 +16544,9 @@
                 <value>veiculos so.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -15391,8 +16571,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -15502,6 +16688,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -15608,12 +16809,14 @@
 <connections>
     <id>f16e2d3f-0aa5-3060-0000-000000000000</id>
     <parentGroupId>39fcd64a-682b-341c-0000-000000000000</parentGroupId>
+    <versionedComponentId>f16e2d3f-0aa5-3060-995b-6b31032f5669</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>39fcd64a-682b-341c-0000-000000000000</groupId>
         <id>6caa2344-82da-38a8-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>6caa2344-82da-38a8-adf4-7d0243e8c094</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -15716,6 +16919,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -15751,6 +16969,7 @@
         <x>440.0</x>
         <y>464.0</y>
     </position>
+    <versionedComponentId>6caa2344-82da-38a8-adf4-7d0243e8c094</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -15827,6 +17046,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -15962,6 +17196,9 @@
                 <value>veiculos mc.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -15986,8 +17223,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -16200,8 +17443,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>6d9433c0-3879-3cbf-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -16218,6 +17473,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -16330,12 +17591,14 @@
 <connections>
     <id>14f11b94-b506-3f78-0000-000000000000</id>
     <parentGroupId>6b8c8536-e1b2-3d35-0000-000000000000</parentGroupId>
+    <versionedComponentId>14f11b94-b506-3f78-a3a6-2ca061e13ba6</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>6b8c8536-e1b2-3d35-0000-000000000000</groupId>
         <id>da844825-4744-369b-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>da844825-4744-369b-9c91-e82b463e1003</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -16569,8 +17832,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>dcfbc64f-2206-3637-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -16587,6 +17862,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -16734,6 +18015,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -16868,6 +18164,9 @@
                 <value>veiculos np.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -16892,8 +18191,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -16925,6 +18230,7 @@
         <x>392.0</x>
         <y>432.0</y>
     </position>
+    <versionedComponentId>da844825-4744-369b-9c91-e82b463e1003</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -17002,6 +18308,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -17055,6 +18376,7 @@
                         <x>1304.0</x>
                         <y>-80.0</y>
                     </position>
+                    <versionedComponentId>e9607784-b1ce-35ab-bb66-4aed21da84fe</versionedComponentId>
                     <comments></comments>
                     <contents>
                         <labels>
@@ -17064,6 +18386,7 @@
 <x>-216.0</x>
 <y>-248.0</y>
                             </position>
+                            <versionedComponentId>b2efab60-4e13-302d-a125-84444dcec21f</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -17081,6 +18404,7 @@
 <x>-216.0</x>
 <y>-472.0</y>
                             </position>
+                            <versionedComponentId>bd5ad0bd-9f30-3c9e-89aa-1c519f3fce2d</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -17098,6 +18422,7 @@
 <x>-216.0</x>
 <y>-696.0</y>
                             </position>
+                            <versionedComponentId>e913cd42-90a2-3af5-a061-81a01514892d</versionedComponentId>
                             <height>200.0</height>
                             <style>
 <entry>
@@ -17390,8 +18715,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>43a9d351-4724-3807-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -17408,6 +18745,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -17576,6 +18919,9 @@
                 <value>Boletos so.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -17600,8 +18946,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -17710,6 +19062,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -17824,6 +19191,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -17930,12 +19312,14 @@
 <connections>
     <id>4aa41ce5-36e3-357f-0000-000000000000</id>
     <parentGroupId>b7085b01-661b-3221-0000-000000000000</parentGroupId>
+    <versionedComponentId>4aa41ce5-36e3-357f-9346-ebd292191676</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>b7085b01-661b-3221-0000-000000000000</groupId>
         <id>75a343d7-e657-324c-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>75a343d7-e657-324c-a934-578e4548ea37</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -18141,8 +19525,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>6d9433c0-3879-3cbf-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -18159,6 +19555,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -18228,6 +19630,7 @@
         <x>440.0</x>
         <y>464.0</y>
     </position>
+    <versionedComponentId>75a343d7-e657-324c-a934-578e4548ea37</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -18304,6 +19707,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -18439,6 +19857,9 @@
                 <value>Boletos mc.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -18463,8 +19884,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -18574,6 +20001,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -18680,12 +20122,14 @@
 <connections>
     <id>cf2946cb-fe2d-38b3-0000-000000000000</id>
     <parentGroupId>fc359722-1525-33fd-0000-000000000000</parentGroupId>
+    <versionedComponentId>cf2946cb-fe2d-38b3-b7cd-7fad77299eb6</versionedComponentId>
     <backPressureDataSizeThreshold>5 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
     <destination>
         <groupId>fc359722-1525-33fd-0000-000000000000</groupId>
         <id>e4b2cbdf-2282-3dc5-0000-000000000000</id>
         <type>PROCESSOR</type>
+        <versionedComponentId>e4b2cbdf-2282-3dc5-9d4a-8a9787eeb63f</versionedComponentId>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
     <labelIndex>1</labelIndex>
@@ -18809,6 +20253,9 @@
                 <value>Boletos np.json</value>
             </entry>
             <entry>
+                <key>Path Filter</key>
+            </entry>
+            <entry>
                 <key>Batch Size</key>
                 <value>10</value>
             </entry>
@@ -18833,8 +20280,14 @@
                 <value>0 sec</value>
             </entry>
             <entry>
+                <key>Maximum File Age</key>
+            </entry>
+            <entry>
                 <key>Minimum File Size</key>
                 <value>0 B</value>
+            </entry>
+            <entry>
+                <key>Maximum File Size</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -18943,6 +20396,21 @@
             <entry>
                 <key>Create Missing Directories</key>
                 <value>true</value>
+            </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
             </entry>
         </properties>
         <retryCount>10</retryCount>
@@ -19160,8 +20628,20 @@
                 <value>UPSERT</value>
             </entry>
             <entry>
+                <key>Statement Type Record Path</key>
+            </entry>
+            <entry>
+                <key>Data Record Path</key>
+            </entry>
+            <entry>
                 <key>put-db-record-dcbp-service</key>
                 <value>dcfbc64f-2206-3637-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>put-db-record-catalog-name</key>
+            </entry>
+            <entry>
+                <key>put-db-record-schema-name</key>
             </entry>
             <entry>
                 <key>put-db-record-table-name</key>
@@ -19178,6 +20658,12 @@
             <entry>
                 <key>put-db-record-unmatched-column-behavior</key>
                 <value>Fail on Unmatched Columns</value>
+            </entry>
+            <entry>
+                <key>put-db-record-update-keys</key>
+            </entry>
+            <entry>
+                <key>put-db-record-field-containing-sql</key>
             </entry>
             <entry>
                 <key>put-db-record-allow-multiple-statements</key>
@@ -19247,6 +20733,7 @@
         <x>392.0</x>
         <y>432.0</y>
     </position>
+    <versionedComponentId>e4b2cbdf-2282-3dc5-9d4a-8a9787eeb63f</versionedComponentId>
     <bundle>
         <artifact>nifi-standard-nar</artifact>
         <group>org.apache.nifi</group>
@@ -19324,6 +20811,21 @@
                 <key>Create Missing Directories</key>
                 <value>true</value>
             </entry>
+            <entry>
+                <key>Maximum File Count</key>
+            </entry>
+            <entry>
+                <key>Last Modified Time</key>
+            </entry>
+            <entry>
+                <key>Permissions</key>
+            </entry>
+            <entry>
+                <key>Owner</key>
+            </entry>
+            <entry>
+                <key>Group</key>
+            </entry>
         </properties>
         <retryCount>10</retryCount>
         <runDurationMillis>0</runDurationMillis>
@@ -19380,5 +20882,5 @@
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>05/19/2023 11:09:33 BRT</timestamp>
+    <timestamp>06/06/2023 16:49:03 BRT</timestamp>
 </template>
